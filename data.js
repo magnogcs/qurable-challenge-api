@@ -42,7 +42,7 @@ const data = [
         price: 1234.56,
         image: "http://localhost:3000/assets/product-image.jpg",
         creator: {
-          creator_id: 102,
+          creator_id: "102",
           creator_name: "Creator 2",
           creator_image: "http://localhost:3000/assets/creator-2.png"
         }
@@ -54,7 +54,7 @@ const data = [
         price: 1234.56,
         image: "http://localhost:3000/assets/product-image.jpg",
         creator: {
-          creator_id: 102,
+          creator_id: "102",
           creator_name: "Creator 2",
           creator_image: "http://localhost:3000/assets/creator-2.png"
         }
@@ -66,7 +66,7 @@ const data = [
         price: 1234.56,
         image: "http://localhost:3000/assets/product-image.jpg",
         creator: {
-          creator_id: 102,
+          creator_id: "102",
           creator_name: "Creator 2",
           creator_image: "http://localhost:3000/assets/creator-2.png"
         }
@@ -78,7 +78,7 @@ const data = [
         price: 1234.56,
         image: "http://localhost:3000/assets/product-image.jpg",
         creator: {
-          creator_id: 103,
+          creator_id: "103",
           creator_name: "Creator 1",
           creator_image: "http://localhost:3000/assets/creator-1.png"
         }
