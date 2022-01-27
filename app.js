@@ -1,7 +1,9 @@
 const express = require('express');
 const data = require('./data');
 const cors = require('cors');
-  
+require('dotenv').config();
+const port = process.env.PORT || 5001; 
+
 const app = express();
 app.use(cors())
 
@@ -36,11 +38,6 @@ app.get('/api/items/:id', (req, res, next) => {
     });
     res.send({items: filteredItems});
   });
-  
-
-app.listen(5000, () => {
-  console.log('Server started!');
-});
 
 //Get items by creator
 app.get('/api/creators/:creator_id', (req, res, next) => {
@@ -57,3 +54,6 @@ app.get('/api/creators/:creator_id', (req, res, next) => {
     res.send({items: filteredItems});
   });
   
+  app.listen(port, () => {
+    console.log('Server started!');
+  });
