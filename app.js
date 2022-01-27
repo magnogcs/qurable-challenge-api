@@ -29,7 +29,6 @@ app.get('/api/items/:id', (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     const filters = req.params;
     const filteredItems = data.filter(item => {
-       
       let isValid = true;
       for (key in filters) {
         isValid = isValid && item[key] == filters[key];
@@ -44,7 +43,6 @@ app.get('/api/creators/:creator_id', (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     const filters = req.params;
     const filteredItems = data.filter(item => {
-       
       let isValid = true;
       for (key in filters) {
         isValid = isValid && item.creator[key] == filters[key];
